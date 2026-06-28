@@ -58,7 +58,7 @@ def average_students_grade(students: list[Student], course: str):
         grades_list += grades
 
     if not grades_list:
-        return 'Ошибка, у студентов нет оценок'
+        return 0
 
     return sum(grades_list) / len(grades_list)
 
@@ -76,7 +76,7 @@ def average_lecturers_grade(lecturers: list[Lecturer], course: str):
         grades_list += grades
 
     if not grades_list:
-        return 'Ошибка, у лекторов нет оценок'
+        return 0
 
     return sum(grades_list) / len(grades_list)
 
