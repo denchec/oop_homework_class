@@ -66,7 +66,7 @@ def average_students_grade(students: list[Student], course: str):
 def average_lecturers_grade(lecturers: list[Lecturer], course: str):
     grades_list = []
     for lecturer in lecturers:
-        if not isinstance(lecturer, Student):
+        if not isinstance(lecturer, Lecturer):
             continue
 
         grades = lecturer.grades.get(course, None)
