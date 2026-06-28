@@ -28,7 +28,7 @@ class Student:
 
         return (f'Имя: {self.name}\n'
                 f'Фамилия: {self.surname}\n'
-                f'Средняя оценка за лекции: {average_g}\n'
+                f'Средняя оценка за домашние задания: {average_g}\n'
                 f'Курсы в процессе изучения: {', '.join(self.courses_in_progress)}\n'
                 f'Завершенные курсы: {", ".join(self.finished_courses)}')
 
